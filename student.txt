@@ -1,0 +1,5 @@
+Student name: Lois Peggeman
+Student number: 715688
+Student class: INF1C
+GitHub Repository: loispeggeman.github.io
+GitHub Pages URL: https://github.com/LoisPeggeman/loispeggeman.github.io
