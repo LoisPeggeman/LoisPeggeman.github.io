@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Contact</title>
-
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
@@ -12,7 +10,6 @@
         <button class="cookies message">
             This website uses cookies. Got it!
         </button>
-    
         <nav class="navbar">
             <ul>
                 <li>
@@ -24,62 +21,74 @@
                 </li>
             </ul>
         </nav>
-        </header>
+    </header>
 
-    <article class="white backgrond">
-        <h1>
-            Contact
-        </h1>
-        <p>
-            Ik ben het best bereikbaar via mail. Ik beantwoord binnen een week uw vragen. 
-            Mocht u geen reactie van mij ontvangen checkt u dan alstublieft uw spam mailbox. Helaas belanden mijn mails soms daarin.
-            Op mijn mobiel nummer ben ik beperkt bereikbaar.
-        </p>
-        <header>
-            Contactgegevens
-        </header>
-        <p>
-            Autorijschool Arthur Peggeman 
-            Tolweg 1, 1911MN
-            06-24282098
-            Arthurpeggeman@hotmail.com
-        </p>
-    </article>
+    <section class="white backgrond">
+        <article>
+            <h1>Contact</h1>
+            <p>
+                Ik ben het best bereikbaar via mail. Ik beantwoord binnen een week uw vragen.
+                Mocht u geen reactie van mij ontvangen, check dan alstublieft uw spam mailbox. Helaas belanden mijn mails soms daarin.
+                Op mijn mobiel nummer ben ik beperkt bereikbaar.
+            </p>
+            <header>
+                <h3>Contactgegevens</h3>
+            </header>
+            <address>
+                Autorijschool Arthur Peggeman <br>
+                Tolweg 1, 1911MN <br>
+                06-24282098 <br>
+                <a href="mailto:Arthurpeggeman@hotmail.com">Arthurpeggeman@hotmail.com</a>
+            </address>
+        </article>
+    </section>
 
-    <article class="white backgrond">
-        <header>
-            Direct contact
-        </header>
-        <p>
-            Vul hier je e-mailadres in* 
-        </p>
-        <textarea name="vul hier je e-mailadres in*" id="textvak email" cols="30" rows="10"e-mailadres></textarea>
-        <textarea name="schrijf hier je bericht" id="textvak bericht" cols="50" rows="30"schrijf hier je bericht></textarea>
-    </article>
+    <section class="white backgrond">
+        <article>
+            <header>
+                <h3>Direct contact</h3>
+            </header>
+            <p>
+                Vul hier je e-mailadres in*
+            </p>
+            <form action="submit_form.php" method="post">
+                <label for="email">E-mailadres:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" required></textarea>
+            </form>
+        </article>
+    </section>
 
-    <article class="red backgrond">
-        <header>
-            Niet langer wachten en mateen beginnen? Klik hiernaast om je meteen in te schrijven!
-        </header>
-        <button class= "button white">
-            <a href="Inschrijven.html">Meteen inschrijven</a>
-        </button>
+    <section class="red backgrond">
+        <article>
+            <header>
+                <h3>Niet langer wachten en meteen beginnen? Klik hiernaast om je meteen in te schrijven!</h3>
+            </header>
+            <button class="button white">
+                <a href="Inschrijven.html">Meteen inschrijven</a>
+            </button>
+        </article>
+    </section>
 
-    </article class="white backgrond">
-    <article>
-        <button class=" button red">
-            <a href="index.html">Terug naar homepagina</a>
-        </button>
-    </article>
+    <section class="white backgrond">
+        <article>
+            <button class="button red">
+                <a href="index.html">Terug naar homepagina</a>
+            </button>
+        </article>
+    </section>
 
     <footer class="red backgrond">
-        FAQ
-        <img class="icoon" src="images/email.png" alt="icoon email"> 
-        <a href="mailto:Arthurpeggeman@hotmail.com"> Arthurpeggeman@hotmail.com </a>
-        
-        <img class="icoon" src="images/telephone.png" alt="icoon telefoon">
-        06-10127398
-     </footer>
- 
- </body>
- </html>
+        <h2>FAQ</h2>
+        <aside>
+            <img class="icoon" src="images/email.png" alt="icoon email">
+            <a href="mailto:Arthurpeggeman@hotmail.com">Arthurpeggeman@hotmail.com</a>
+        </aside>
+        <aside>
+            <img class="icoon" src="images/telephone.png" alt="icoon telefoon">
+            06-10127398
+        </aside>
+    </footer>
+</body>
+</html>

@@ -1,90 +1,93 @@
-body
-{
-.cookies message {
+body {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.cookies message::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
     background-color: lightgrey;
     color: black;
     position: fixed;
     text-align: center;
 }
-width: 100%;
-margin: 0%;
-padding: 0%;
 
-}
-.navbar ul {
-    list-style-type: none;
-    background-color: red;
-    padding: 5%;
-    margin: 0%;
-    overflow: hidden;
-}
-
-.navbar li {
-float: right;
-background-color: red;
-
-}
-.navbar a {
+.navbar {
     position: relative;
-    font-size: 16px;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
-    background-color: red;
+    margin-bottom: 20px;
 }
+
+    .navbar ul {
+        list-style-type: none;
+        background-color: red;
+        padding: 5px;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .navbar li {
+        float: right;
+        background-color: red;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 20px;
+        padding: 10px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        word-spacing: 2px;
+        transition: color 0.3s;
+        border: 1px solid transparent;
+    }
+
+        .navbar a:hover {
+            color: lightcoral;
+        }
+
+        .navbar a:visited {
+            color: purple;
+            border-color: purple;
+            border-style: solid;
+            border-width: 1px;
+        }
 
 #HomePaginaFotoBovenin {
     max-width: 100%;
-    max-height: auto;;
 }
 
 #homePaginaFotoLesbord {
     max-height: 60%;
     max-width: fit-content;
-    max-height: auto;;
     padding-right: 100px;
 }
 
-p2, p4 {
-    background-color: red;
-    color: white;
-    width: 100%;
-    height: auto;
-
-}
-
 #homePaginaFotoLandschap {
-    max-height: fit-content;; 
+    max-height: fit-content;
     max-width: 30%;
-    max-height: auto;;
     padding-left: 100px;
     float: right;
 }
 
 #homePaginaFotoDashboard {
     max-width: 30%;
-    max-height: auto;; 
     left: 20px;
 }
 
 #homePaginaFotoVooraanzicht {
-    max-height: fit-content;; 
+    max-height: fit-content;
     max-width: 30%;
-    max-height: auto;;
     padding-left: 100px;
     float: right;
 }
 
-#Pagina2FotoVooraanzicht {
-    max-width: 30%;
-    max-height: auto;;  
-    align-items: center;
-}
-
+#Pagina2FotoVooraanzicht,
 #Pagina2FotoVooraanzichtMetArthur {
     max-width: 30%;
-    max-height: auto;;  
     align-items: center;
 }
 
@@ -94,25 +97,24 @@ p2, p4 {
     display: flex;
     align-items: center;
     background-color: white;
-
 }
 
-.white.backgrond > img{
-    margin-left: 100px;
-    float: right;
-}
+    .white.backgrond > img {
+        margin-left: 100px;
+        float: right;
+    }
 
-.white.backgrond > section {
-    margin-right: 10px;
-    width: 500px;
-}
+    .white.backgrond > section {
+        margin-right: 10px;
+        width: 500px;
+    }
 
-.white.backgrond > section > a{
-    background-color: red;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
+        .white.backgrond > section > a {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
 .red.backgrond {
     min-width: 100%;
@@ -122,23 +124,23 @@ p2, p4 {
     background-color: red;
 }
 
-.red.backgrond > section{
-    margin-right: 0%;
-}
+    .red.backgrond > section {
+        margin-right: 0%;
+    }
 
-.red.backgrond > img{
-    margin-left: 100px;
-}
+    .red.backgrond > img {
+        margin-left: 100px;
+    }
 
-.red.backgrond > section{
-    margin-left: 10px;
-}
+    .red.backgrond > section {
+        margin-left: 10px;
+    }
 
-.red.backgrond > section > a{
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
+        .red.backgrond > section > a {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
 .button.red {
     background-color: red;
@@ -152,5 +154,4 @@ p2, p4 {
 
 .icoon {
     max-width: 2%;
-    max-height: auto;
 }

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Inschrijven</title>
-
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
@@ -12,7 +10,6 @@
         <button class="cookies message">
             This website uses cookies. Got it!
         </button>
-    
         <nav class="navbar">
             <ul>
                 <li>
@@ -24,75 +21,98 @@
                 </li>
             </ul>
         </nav>
-        </header>
+    </header>
 
     <article class="white backgrond">
         <h1>
             Schrijf je in bij autorijschool Arthur Peggeman
         </h1>
         <p>
-            Wanneer je je hebt inschreven krijg je spoedig bericht van mij. dan plannen we samen je eerste les in. 
-            je kunt aangeven of je 1 of meerdere keren per week wil lessen en wanneer je ongeveer wil beginnen.
+            Wanneer je je hebt ingeschreven, krijg je spoedig bericht van mij. Dan plannen we samen je eerste les in.
+            Je kunt aangeven of je 1 of meerdere keren per week wil lessen en wanneer je ongeveer wil beginnen.
         </p>
         <header>
-            Inschrijfformulier
+            <h3>Inschrijfformulier</h3>
         </header>
-        <textarea name="voornaam" id="textvak voornaam" cols="30" rows="2"Voornaam></textarea>
+        <form action="submit_form.php" method="post">
+            <label for="voornaam">Voornaam:</label>
+            <textarea name="voornaam" id="textvak voornaam" cols="30" rows="2" required></textarea>
 
-        <textarea name="achternaam" id="textvak achternaam" cols="30" rows="2"achternaam></textarea>
+            <label for="achternaam">Achternaam:</label>
+            <textarea name="achternaam" id="textvak achternaam" cols="30" rows="2" required></textarea>
 
-        <textarea name="geboortedatum" id="tekstvak geboortedatum" cols="30" rows="2"geboortedatum></textarea>
+            <label for="geboortedatum">Geboortedatum:</label>
+            <textarea name="geboortedatum" id="tekstvak geboortedatum" cols="30" rows="2" required></textarea>
 
-        <header>
-            geslacht
-        </header>
-        <input type="radio" name="man" id="radiobutton man" Man>
-        <input type="radio" name="vrouw" id="radiobutton vrouw"Vrouw>
-        <input type="radio" name="anders" id="radiobutton anders"Anders>
-        <input type="radio" name="Zeg ik liever niet" id="radiobutton zeg ik liever niet"Zeg ik liever niet>
+            <header>
+                <h3>Geslacht</h3>
+            </header>
+            <input type="radio" name="geslacht" id="radiobutton man" value="Man" required>
+            <label for="man">Man</label>
+            <input type="radio" name="geslacht" id="radiobutton vrouw" value="Vrouw" required>
+            <label for="vrouw">Vrouw</label>
+            <input type="radio" name="geslacht" id="radiobutton anders" value="Anders" required>
+            <label for="anders">Anders</label>
+            <input type="radio" name="geslacht" id="radiobutton zeg ik liever niet" value="Zeg ik liever niet" required>
+            <label for="zegiklieverniet">Zeg ik liever niet</label>
 
-        <textarea name="adres" id="textvak adres" cols="30" rows="2"adres></textarea>
-        <textarea name="postcode" id="textvak postcode" cols="30" rows="2"postcode></textarea>
-        <textarea name="woonplaats" id="textvak woonplaats" cols="30" rows="2"woonplaats></textarea>
-        <textarea name="e-mailadres" id="textvak email" cols="30" rows="2"e-mailadres></textarea>
+            <label for="adres">Adres:</label>
+            <textarea name="adres" id="textvak adres" cols="30" rows="2" required></textarea>
+            <label for="postcode">Postcode:</label>
+            <textarea name="postcode" id="textvak postcode" cols="30" rows="2" required></textarea>
+            <label for="woonplaats">Woonplaats:</label>
+            <textarea name="woonplaats" id="textvak woonplaats" cols="30" rows="2" required></textarea>
+            <label for="e-mailadres">E-mailadres:</label>
+            <textarea name="e-mailadres" id="textvak email" cols="30" rows="2" required></textarea>
 
-        <input type="radio" name="compleet pakket 20 lessem" id="radiobutton 20 lessen"Compleet pakket 20 lessen>
-        <input type="radio" name="compleet pakket 25 lessem" id="radiobutton 25 lessen"Compleet pakket 25 lessen>
-        <input type="radio" name="compleet pakket 30 lessem" id="radiobutton 30 lessen"Compleet pakket 30 lessen>
+            <header>
+                <h3>Pakketkeuze</h3>
+            </header>
+            <input type="radio" name="pakket" id="radiobutton 20 lessen" value="Compleet pakket 20 lessen" required>
+            <label for="20lessen">Compleet pakket 20 lessen</label>
+            <input type="radio" name="pakket" id="radiobutton 25 lessen" value="Compleet pakket 25 lessen" required>
+            <label for="25lessen">Compleet pakket 25 lessen</label>
+            <input type="radio" name="pakket" id="radiobutton 30 lessen" value="Compleet pakket 30 lessen" required>
+            <label for="30lessen">Compleet pakket 30 lessen</label>
 
-        <input type="checkbox" name="akkoordverklaring" id="akkoordverklaring">
-        <p>
-            *door de akkoordverklaring aan te vinken ga je akkoord met het feit dat autorijschool arthur peggeman de door jou ingevulde 
-            informatie gebruikt om een leerlingenkaart aan te maken en contact met je op te nemen.
-        </p>
+            <label for="akkoordverklaring">Akkoordverklaring:</label>
+            <input type="checkbox" name="akkoordverklaring" id="akkoordverklaring" required>
+            <p>
+                *Door de akkoordverklaring aan te vinken, ga je akkoord met het feit dat autorijschool Arthur Peggeman de door jou ingevulde
+                informatie gebruikt om een leerlingenkaart aan te maken en contact met je op te nemen.
+            </p>
+
+            <button class="button white" type="submit">
+                <em><strong>Verstuur inschrijving</strong></em>
+            </button>
+        </form>
     </article>
 
     <article class="red backgrond">
         <header>
-            Wil je graag eerst contact met mij of heb je vragen? Op deze pagina vindt je mijn contact gegevens en kan je meteen een mail sturen.
+            <h3>Wil je graag eerst contact met mij of heb je vragen? Op deze pagina vind je mijn contactgegevens en kan je meteen een mail sturen.</h3>
         </header>
         <button class="button white">
             <a href="Contact.html">Contact</a>
         </button>
     </article>
-        
+
     <article class="white backgrond">
-        <button aria-colcount=" button red">
+        <button class="button red">
             <a href="index.html">Terug naar homepagina</a>
         </button>
     </article>
 
     <footer class="red backgrond">
-        FAQ
-        <img class="icoon" src="images/email.png" alt="icoon email"> 
-        <a href="mailto:Arthurpeggeman@hotmail.com"> Arthurpeggeman@hotmail.com </a>
-        
-        <img class="icoon" src="images/telephone.png" alt="icoon telefoon">
-        06-10127398
-     </footer>
- 
- </body>
- </html>
-
-
-
+        <h2>FAQ</h2>
+        <aside>
+            <img class="icoon" src="images/email.png" alt="icoon email">
+            <a href="mailto:Arthurpeggeman@hotmail.com">Arthurpeggeman@hotmail.com</a>
+        </aside>
+        <aside>
+            <img class="icoon" src="images/telephone.png" alt="icoon telefoon">
+            06-10127398
+        </aside>
+    </footer>
+</body>
+</html>
