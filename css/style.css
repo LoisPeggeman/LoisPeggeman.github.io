@@ -2,6 +2,7 @@ body {
     width: 100%;
     margin: 0%;
     padding: 0%;
+    text-indent: 20px;
 }
 
 .cookies message::first-letter {
@@ -55,6 +56,9 @@ body {
             border-style: solid;
             border-width: 1px;
         }
+        .navbar a:active {
+            color: #0000FF;
+          }
 
 #HomePaginaFotoBovenin {
     max-width: 100%;
@@ -155,3 +159,56 @@ body {
 .icoon {
     max-width: 2%;
 }
+/* Media Query for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        text-indent: 10px; /* Adjust text-indent for smaller screens */
+
+    }
+
+    .navbar {
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .navbar li {
+        float: none; /* Change the float property for smaller screens */
+        width: 100%; /* Set width to 100% for better responsiveness */
+        text-align: center; /* Center the navigation items */
+    }
+
+    .navbar a {
+        margin: 5px; /* Adjust margin for better spacing on smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        text-indent: 5px; /* Adjust text-indent for smaller screens */
+
+    }
+
+}
+@media only screen and (min-width: 768px) 
+{
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        text-indent: 10px; /* Adjust text-indent for smaller screens */
+
+    }
+
+    .navbar {
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .navbar li {
+        float: none; /* Change the float property for smaller screens */
+        width: 100%; /* Set width to 100% for better responsiveness */
+        text-align: center; /* Center the navigation items */
+    }
+
+    .navbar a {
+        margin: 5px; /* Adjust margin for better spacing on smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        text-indent: 5px; /* Adjust text-indent for smaller screens */
+
+    }
+}
+
